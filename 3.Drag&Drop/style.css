@@ -1,0 +1,44 @@
+body{
+    background:  darkolivegreen ;
+}
+
+.imgBox{
+    /* border: 1px solid red; */
+    background-image: url('https://images.news18.com/ibnlive/uploads/2022/03/bhagat-singh.png');
+    position: relative;
+    height: 145px;
+    width: 145px;
+    top: 7px;
+    left: 5px;
+    border-radius: 50%;
+
+    background-position: center;
+    background-size: cover;
+   cursor: pointer;
+}
+
+.whiteBox{
+  border: 1px solid red;
+    height: 155px;
+    width: 155px;
+    margin: 10px;
+    display: inline-block;
+    background-color: aqua;
+}
+
+
+
+
+
+ .hold{
+    border: solid red 4px;
+}
+
+.dashed{
+    background: rgb(214, 206, 206);
+    border-style: dashed;
+}
+
+.hide{
+    display: none;
+} 
