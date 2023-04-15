@@ -4,58 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bulb On/off</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Bulb ON/off</title>
 </head>
 <body>
-    <h1>Here is my bulb</h1>
-    <button onclick="turnOn()">Turn On</button> 
-    <button onclick="turnOff()" >Turn Off</button>
+      <div id="wrapper">
+            
+            <button onclick="turnOn()">Light ON</button>
+            
+            <button  onclick="turnOff()">Light 0ff</button>
 
-    <button id="onOff" onclick="toggleBulb()">On</button>
-
-    <div class="container">
-        <img id="off"   src="/img/bulbOff.png" alt="">
-        <!-- <img src="/img/bulbOn.png" alt=""> -->
-    </div>
+             <button class="onOff" onclick="toggleBtn()">On</button>
+             <div class="img">
+                <img class="off" src="/img/bulbOff.png" alt="">
+            </div>
+      </div>
 </body>
 </html>
-
 <script>
 
-    // on 
+    // light on ----------
+     let turnOn= () =>{
+          document.querySelector(".off")
+          .src ="/img/bulbOn.png"
+     } 
 
-    const turnOn=()=>{
-        let onImg=document.querySelector('#off');
-        onImg.src="/img/bulbOn.png"
-    }  
+    //  light off -------------
+
+     let turnOff= () =>{
+          document.querySelector(".off")
+          .src ="/img/bulbOff.png"
+     } 
 
 
-    // off 
-    console.log(turnOn)
-    
-    const turnOff=()=>{
-        let offImg=document.querySelector('#off');
-        offImg.setAttribute("src","/img/bulbOff.png");
-    }    
+    //  toggle ------------
 
-//   toggel 
+    let toggleBtn= () =>{
+        let imgBox= document.querySelector(".off");
+        let srcValue=imgBox.getAttribute('src');
 
-const toggleBulb=()=>{
-    
-    let imgOb=document.getElementById('off')
-    let srcValue= imgOb.getAttribute('src')
+        // console.log(srcValue)
 
-    if( srcValue =="/img/bulbOff.png")
-    {
-        turnOn();
-        document.querySelector("#onOff").innerText="Off";
+        
+        if(srcValue == "/img/bulbOff.png")
+        {
+           turnOn();
+
+            document.querySelector(".onOff").innerText="off"
+        }
+
+        if(srcValue == "/img/bulbOn.png")
+        {
+           turnOff();
+
+            document.querySelector(".onOff").innerText="On"
+        }
     }
 
-    else{
-        turnOff();
-        document.querySelector("#onOff").innerText="On";
-    }
-
     
-} 
 </script>
+
