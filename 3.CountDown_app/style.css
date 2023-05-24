@@ -1,88 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main{
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-image: url(https://plus.unsplash.com/premium_photo-1673697239961-c546f978cdcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-image: url(https://plus.unsplash.com/premium_photo-1673697239961-c546f978cdcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.main .overlay{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(0,0,0,0.7);
-     padding: 200px;
-    
+.main .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 200px;
 }
 
-#ramfal{
-    margin-top: 10px;
-    width: 100%;
-    /* color: white; */
-    /* text-align: center; */
-    font-size: 2.5rem;
-    z-index: 100;
-}  
+/* #ramfal{
+  margin-top: 10px;
+  width: 100%;
+  color: white; 
+text-align: center;
+  font-size: 2.5rem;
+  z-index: 100;
+} */
 
 .title {
-    margin-top: 10px;
-    color: white;
-    text-align: center;
-    font-size: 2.5rem;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .col {
-    margin-top: 20px;
-    width: 90%;
-    display: flex;
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
 
-    justify-content: center;
-    color: white;
+  justify-content: center;
+  color: white;
 }
 
 .col div {
-    width: 250px;
-    text-align: center;
+  width: 250px;
+  text-align: center;
 }
 
 input {
-    width: 90%;
-   
-    background-color: rgba(255, 255, 255, 0.9);
-    border-color: transparent;
-    border-radius: 5px;
-    height: 50px;
-    text-align: center;
-    font-size: 30px;
-  
+  width: 90%;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: transparent;
+  border-radius: 5px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
